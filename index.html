@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для реєстрації</title>
+</head>
+<body>
+    <form id="form" action="" method="post">
+        <p>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="John">
+        </p>
+        <p>
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" placeholder="Smit"> 
+        </p>
+        <p>
+            <label for="date">Дата народження:</label>
+            <input type="date" id="date" name ="date" placeholder="18.08.1988">
+        </p>
+        <p>
+            <p>Виберіть стать:</p>
+            <input type="radio" id="gender" name="gender" value="women" checked/>
+            <label for="gender">Жіноча</label>
+       
+            <input type="radio" id="gender" name="gender" value="men" />
+            <label for="gender">Чоловіча</label>
+        </p>
+
+        <p>
+            <label for="city">Виберіть місто:</label>
+
+            <select name="cityes" id="city">
+              <option value="">--Please choose an option--</option>
+              <option value="kyiv">Київ</option>
+              <option value="odesa">Одеса</option>
+              <option value="lviv">Львів</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="address">Введіть адресу:</label>
+            <textarea id="address" name="address" rows="2" cols="33"></textarea>
+        </p>
+
+        <p>Оберіть мову якою володієте:</p>
+        <p>
+            <input type="checkbox" id="ua" name="lang" value="ua" checked/>
+            <label for="ua">Українська</label>
+        </p>
+        <p>
+            <input type="checkbox" id="eng" name="lang" value="eng" />
+            <label for="eng">Англійська</label>
+        </p>
+        <p>
+            <input type="checkbox" id="other" name="lang" value="other" />
+            <label for="other">Інша</label>
+        </p>
+       <p>
+            <button type="submit">Зберегти</button>
+       </p>
+    </form>
+
+    <table>
+        <tbody> </tbody>
+    </table>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
