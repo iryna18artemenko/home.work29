@@ -16,7 +16,7 @@ formElement.addEventListener('submit', (e) => {
         <tr> Стать: ${formData.get('gender')} </tr>
         <tr> Місто: ${formData.get('cityes')} </tr>
         <tr> Адреса: ${formData.get('address')} </tr>
-        <tr> Мова: ${formData.get('lang')} </tr>
+        <tr> Мова: ${formData.getAll('lang').join(', ')} </tr>
         `;
       
       const html = `
